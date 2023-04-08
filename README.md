@@ -29,7 +29,7 @@ and after installation again go to ***(Tools>Board>ESP32 Arduino)*** and select 
 
 Verify and upload the code and then after **"Hard resetting via RTS pin"** message comes in terminal of Arduino IDE open the Serial Monitor and make sure the baud rate is "115200" and press the reset button on the ESP32-Cam then remove the wires connecting GND and IO0 on the ESP32-Cam and press reset again and you will get a link if the connection to the network happens successfully.
 
-***(Note: Make sure you have Python install going foward, if not download from the link: [Download Python](https://www.python.org/downloads/))***
+***(Note: Make sure you have Python installed going foward, if not download from the link: [Download Python](https://www.python.org/downloads/))***
 
 From the url ***"http://(your url)/cam-hi.jpg"*** use the imgdet.py file and copy paste the url you got from the above code and install the following libraries for the code:
 ```
