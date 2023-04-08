@@ -6,12 +6,13 @@ Your one step application to managing your store using hardware for real time da
 * Measurement of performance
 * Measurement of potential per aisle
 - - - -
-### Setup
+### Setup of the Hardware
 Make the following connections with the Arduino UNO and the ESP32-Cam with the jumper wires as shown below:
 ![](Connections/Connections.jpg)
 After doing the above please go Arduino site and download the Arduino IDE: [Arduino IDE Download](https://www.arduino.cc/en/software)
 
-After the above step then use the code in the ESP32-Loader Directory 
+After the above step then use the code in the ESP32-Loader/CameraFMAA.ino in our repository.
+
 After the above you need to upload the zip file for the "esp32cam.h" library to the Arduino IDE after opening it from the github link given: [Download ZIP](https://github.com/yoursunny/esp32cam)
 
 Then you have to copy paste the following link into the Additional Boards Manager URLs in the *(File>Preferences)*:
@@ -25,4 +26,5 @@ and after installation again go to *(Tools>Board>ESP32 Arduino)* and select ESP3
 * Flash Mode: QIO
 * Partition Scheme: Huge APP (3MB no OTA/1MB SPIFFS)
 
-Run the program and then after **"Hard resetting via RTS pin"** message comes press the reset button on the ESP32-Cam then remove the wires connecting GND and IO0 on the ESP32-Cam and press reset again and you will get a link if the connection to the network happens successfully.
+Run the program and then after **"Hard resetting via RTS pin"** message comes open the Serial Monitor and make sure the baud rate is "115200" and press the reset button on the ESP32-Cam then remove the wires connecting GND and IO0 on the ESP32-Cam and press reset again and you will get a link if the connection to the network happens successfully.
+From the url "https://(your url)/cam-hi.jpg"
