@@ -9,7 +9,7 @@ import pandas as pd
 from datetime import date
 import time
 
-url='http://192.168.41.222/cam-hi.jpg'
+url='Enter the url to the image from the CameraFMAA code'
 im=None
 def run1():
     cv2.namedWindow("live transmission", cv2.WINDOW_AUTOSIZE)
