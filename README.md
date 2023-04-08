@@ -64,13 +64,14 @@ Now you can use the application easily and manage your store.
 All the requirements can be found the in the ***requirements.txt*** file in our repository
 - - - -
 ### Technologies Used
-* ESP32-Cam and Arduino UNO
+* ESP32-Cam (Live Transmission)
+* Arduino UNO (Microcontroller)
 * C++ (Arduino Code)
 * Python (Programming Language)
-* Streamlit (Building application)
-* Tensorflow and OpenCV (Detection of People)
+* Streamlit (Building the application)
+* Tensorflow and OpenCV (Detection of People *(yolov4-tiny)*)
 * Pandas and Numpy (Data Manipulation and Reading Libraries)
-* Matplotlib (Bound people with boxes)
+* Matplotlib (Output bounded people with boxes in detection transmission)
 - - - -
 ### Authors
 * [Abhijith Ajith](https://github.com/AAbhijithA)
