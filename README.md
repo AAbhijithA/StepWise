@@ -1,5 +1,8 @@
 # StepWise
-Your one step application to managing your store using hardware for real time data and assesing its performance via the following functionalities
+Your one step application to managing your store using hardware for real time data and assesing its performance:
+![](PrototypeImg/Application.gif)
+
+It has the following functionalities:
 * Hardware: Arduino UNO and ESP32-Cam for detection of people
 * Measurement of footfall in the store aisle
 * Measurement of purchase and profits
@@ -9,7 +12,7 @@ Your one step application to managing your store using hardware for real time da
 ### Setup of the Hardware
 Make the following connections with the Arduino UNO and the ESP32-Cam with the jumper wires as shown below:
 
-![](Connections/Connections.jpg)
+![](PrototypeImg/Connections.jpg)
 After doing the above please go Arduino site and download the Arduino IDE: [Arduino IDE Download](https://www.arduino.cc/en/software)
 
 After the above step then use the code in the ESP32-Loader/ESP32-Loader.ino in our repository and use your Wifi Name and Password in the code.
