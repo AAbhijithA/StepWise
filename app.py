@@ -67,9 +67,3 @@ with st.expander("Enter values into the money data"):
         ldf = pd.DataFrame([[n,m,d]],columns=['people','amount','date'])
         df = pd.concat([df,ldf],axis=0)
         df.to_csv('money.csv',index=False)
-
-
-
-
-
-
