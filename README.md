@@ -26,7 +26,7 @@ and after installation again go to ***(Tools>Board>ESP32 Arduino)*** and select 
 * Flash Mode: QIO
 * Partition Scheme: Huge APP (3MB no OTA/1MB SPIFFS)
 
-Run the program and then after **"Hard resetting via RTS pin"** message comes open the Serial Monitor and make sure the baud rate is "115200" and press the reset button on the ESP32-Cam then remove the wires connecting GND and IO0 on the ESP32-Cam and press reset again and you will get a link if the connection to the network happens successfully.
+Verify and upload the code and then after **"Hard resetting via RTS pin"** message comes in terminal of Arduino IDE open the Serial Monitor and make sure the baud rate is "115200" and press the reset button on the ESP32-Cam then remove the wires connecting GND and IO0 on the ESP32-Cam and press reset again and you will get a link if the connection to the network happens successfully.
 
 ***(Note: Make sure you have Python install going foward, if not download from the link: [Download Python](https://www.python.org/downloads/))***
 
@@ -40,6 +40,11 @@ From the url ***"http://(your url)/cam-hi.jpg"*** use the imgdet.py file and cop
 > pip install numpy
 ```
 We use the **"yolov4-tiny"** model, and detect people who are labelled as "person" in the detection window.
+
+You can run the python file in the terminal to start the detection via:
+```
+> python imgdet.py
+```
 - - - -
 ### Setup of the Application
 
