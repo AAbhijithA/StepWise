@@ -56,7 +56,7 @@ We use Streamlit framework for the building of the application and the libraries
 ```
 and then we run the application using the app.py file via:
 ```
-> pip install app.py
+> streamlit run app.py
 ```
 Now you can use the application easily and manage your store.
 - - - -
