@@ -8,6 +8,7 @@ Your one step application to managing your store using hardware for real time da
 - - - -
 ### Setup of the Hardware
 Make the following connections with the Arduino UNO and the ESP32-Cam with the jumper wires as shown below:
+
 ![](Connections/Connections.jpg)
 After doing the above please go Arduino site and download the Arduino IDE: [Arduino IDE Download](https://www.arduino.cc/en/software)
 
