@@ -1,5 +1,5 @@
 # StepWise
-Your one step application to managing your store using hardware for real time data and assesing its performance:
+Your one step application to managing your store using hardware for real time data and assessing its performance:
 ![](PrototypeImg/Application.gif)
 
 It has the following functionalities:
