@@ -12,7 +12,7 @@ Make the following connections with the Arduino UNO and the ESP32-Cam with the j
 ![](Connections/Connections.jpg)
 After doing the above please go Arduino site and download the Arduino IDE: [Arduino IDE Download](https://www.arduino.cc/en/software)
 
-After the above step then use the code in the ESP32-Loader/CameraFMAA.ino in our repository and use your Wifi Name and Password in the code.
+After the above step then use the code in the ESP32-Loader/ESP32-Loader.ino in our repository and use your Wifi Name and Password in the code.
 
 After the above you need to upload the zip file for the "esp32cam.h" library to the Arduino IDE after opening it from the github link given: [Download ZIP](https://github.com/yoursunny/esp32cam)
 
