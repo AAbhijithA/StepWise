@@ -63,6 +63,15 @@ Now you can use the application easily and manage your store.
 ### Requirements
 All the requirements can be found the in the ***requirements.txt*** file in our repository
 - - - -
+### Technologies Used
+* ESP32-Cam and Arduino UNO
+* C++ (Arduino Code)
+* Python (Programming Language)
+* Streamlit (Building application)
+* Tensorflow and OpenCV (Detection of People)
+* Pandas and Numpy (Data Manipulation and Reading Libraries)
+* Matplotlib (Bound people with boxes)
+- - - -
 ### Authors
 * [Abhijith Ajith](https://github.com/AAbhijithA)
 * [Amoghavarsh SH](https://github.com/AsHtrich)
