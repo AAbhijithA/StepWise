@@ -69,9 +69,9 @@ All the requirements can be found the in the ***requirements.txt*** file in our 
 * C++ (Arduino Code)
 * Python (Programming Language)
 * Streamlit (Building the application)
-* Tensorflow and OpenCV (Detection of People *(yolov4-tiny)*)
+* Tensorflow and OpenCV (Detection of People via "yolov4-tiny" model)
 * Pandas and Numpy (Data Manipulation and Reading Libraries)
-* Matplotlib (Output bounded people with boxes in detection transmission)
+* Matplotlib (Ouput plots)
 - - - -
 ### Authors
 * [Abhijith Ajith](https://github.com/AAbhijithA)
