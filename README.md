@@ -27,8 +27,10 @@ and after installation again go to *(Tools>Board>ESP32 Arduino)* and select ESP3
 * Partition Scheme: Huge APP (3MB no OTA/1MB SPIFFS)
 
 Run the program and then after **"Hard resetting via RTS pin"** message comes open the Serial Monitor and make sure the baud rate is "115200" and press the reset button on the ESP32-Cam then remove the wires connecting GND and IO0 on the ESP32-Cam and press reset again and you will get a link if the connection to the network happens successfully.
-From the url "http://(your url)/cam-hi.jpg"
-Use the imgdet.py file and copy paste the url you got from the above code and install the following libraries for the code:
+
+***(Note: Make sure you have Python install going foward, if not download from the link: [Download Python](https://www.python.org/downloads/)***
+
+From the url "http://(your url)/cam-hi.jpg" use the imgdet.py file and copy paste the url you got from the above code and install the following libraries for the code:
 ```
 > pip install opencv-python
 > pip install tensorflow
@@ -41,11 +43,11 @@ We use the **"yolov4-tiny"** model, and detect people who are labelled as "perso
 - - - -
 ### Setup of the Application
 
-We use Streamlit framework for the building of the application and can be downloaded via:
+We use Streamlit framework for the building of the application and the libraries used for it can be downloaded via:
 ```
 > pip install streamlit
+> pip install pandas
 ```
-***"(NOTE: Ensure you have downloaded all the libraries for the imgdet.py file before running the application itself)"***
 and then we run the application via:
 ```
 > pip install app.py
