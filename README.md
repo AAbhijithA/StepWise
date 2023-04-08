@@ -11,7 +11,7 @@ Make the following connections with the Arduino UNO and the ESP32-Cam with the j
 ![](Connections/Connections.jpg)
 After doing the above please go Arduino site and download the Arduino IDE: [Arduino IDE Download](https://www.arduino.cc/en/software)
 
-After the above step then use the code in the ESP32-Loader/CameraFMAA.ino in our repository.
+After the above step then use the code in the ESP32-Loader/CameraFMAA.ino in our repository and use your Wifi Name and Password in the code.
 
 After the above you need to upload the zip file for the "esp32cam.h" library to the Arduino IDE after opening it from the github link given: [Download ZIP](https://github.com/yoursunny/esp32cam)
 
@@ -27,4 +27,28 @@ and after installation again go to *(Tools>Board>ESP32 Arduino)* and select ESP3
 * Partition Scheme: Huge APP (3MB no OTA/1MB SPIFFS)
 
 Run the program and then after **"Hard resetting via RTS pin"** message comes open the Serial Monitor and make sure the baud rate is "115200" and press the reset button on the ESP32-Cam then remove the wires connecting GND and IO0 on the ESP32-Cam and press reset again and you will get a link if the connection to the network happens successfully.
-From the url "https://(your url)/cam-hi.jpg"
+From the url "http://(your url)/cam-hi.jpg"
+Use the imgdet.py file and copy paste the url you got from the above code and install the following libraries for the code:
+```
+> pip install opencv-python
+> pip install tensorflow
+> pip install cvlib
+> pip install matplotlib
+> pip install pandas
+> pip install numpy
+```
+We use the **"yolov4-tiny"** model, and detect people who are labelled as "person" in the detection window.
+- - - -
+### Setup of the Application
+
+We use Streamlit framework for the building of the application and can be downloaded via:
+```
+> pip install streamlit
+```
+***"(NOTE: Ensure you have downloaded all the libraries for the imgdet.py file before running the application itself)"***
+and then we run the application via:
+```
+> pip install app.py
+```
+Now you can use the application easily and manage your store.
+
