@@ -15,12 +15,12 @@ After the above step then use the code in the ESP32-Loader/CameraFMAA.ino in our
 
 After the above you need to upload the zip file for the "esp32cam.h" library to the Arduino IDE after opening it from the github link given: [Download ZIP](https://github.com/yoursunny/esp32cam)
 
-Then you have to copy paste the following link into the Additional Boards Manager URLs in the *(File>Preferences)*:
+Then you have to copy paste the following link into the Additional Boards Manager URLs in the ***(File>Preferences)***:
 ```
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json, https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ```
-After the above go to *(Tools>Board>Boards Manager)* and search for 'esp32' and install it 
-and after installation again go to *(Tools>Board>ESP32 Arduino)* and select ESP32 Wrover Module and make sure to set the configurations:
+After the above go to ***(Tools>Board>Boards Manager)*** and search for 'esp32' and install it 
+and after installation again go to ***(Tools>Board>ESP32 Arduino)*** and select ESP32 Wrover Module and make sure to set the configurations:
 * Upload Speed: 115200
 * Flash Frequency: 40MHz
 * Flash Mode: QIO
@@ -28,9 +28,9 @@ and after installation again go to *(Tools>Board>ESP32 Arduino)* and select ESP3
 
 Run the program and then after **"Hard resetting via RTS pin"** message comes open the Serial Monitor and make sure the baud rate is "115200" and press the reset button on the ESP32-Cam then remove the wires connecting GND and IO0 on the ESP32-Cam and press reset again and you will get a link if the connection to the network happens successfully.
 
-***(Note: Make sure you have Python install going foward, if not download from the link: [Download Python](https://www.python.org/downloads/)***
+***(Note: Make sure you have Python install going foward, if not download from the link: [Download Python](https://www.python.org/downloads/))***
 
-From the url "http://(your url)/cam-hi.jpg" use the imgdet.py file and copy paste the url you got from the above code and install the following libraries for the code:
+From the url ***"http://(your url)/cam-hi.jpg"*** use the imgdet.py file and copy paste the url you got from the above code and install the following libraries for the code:
 ```
 > pip install opencv-python
 > pip install tensorflow
@@ -48,9 +48,18 @@ We use Streamlit framework for the building of the application and the libraries
 > pip install streamlit
 > pip install pandas
 ```
-and then we run the application via:
+and then we run the application using the app.py file via:
 ```
 > pip install app.py
 ```
 Now you can use the application easily and manage your store.
+- - - -
+### Requirements
+All the requirements can be found the in the ***requirements.txt*** file in our repository
+- - - -
+### Author
+* Abhijith Ajith
+* Amoghavarsh
+* Aravind Krishnan
+
 
