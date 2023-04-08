@@ -13,7 +13,7 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-st.markdown("<h1 style='text-align: center; color: white;'>StepWise</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white; text-decoration: underline;'>StepWise</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; color: white;'>Historical Performance</h2>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; color: white;'>Footfall</h4>", unsafe_allow_html=True)
 data = pd.read_csv("data.csv")
