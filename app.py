@@ -36,13 +36,21 @@ money['date'] = money['date'] - min(money['date'])
 st.markdown("<h4 style='text-align: center; color: white;'>Profits</h4>", unsafe_allow_html=True)
 st.line_chart(money,x='date',y='amount')
 perf = pd.DataFrame()
-perf['Performance'] = ((money['people'])/(data['people']))*100
-perf['date'] = data['date']
+for i in range(0,len(money)):
+    for j in range(0,len(data)):
+        if(data.iloc[j,1]==money.iloc[i,2]):
+            lpf = pd.DataFrame([[money.iloc[i,1]/data.iloc[j,0],data.iloc[j,1]]],columns=['Performance','date'])
+            perf = pd.concat([perf,lpf],axis=0)
+perf['Performance'] = perf['Performance']*100
 st.markdown("<h4 style='text-align: center; color: white;'>Performance of attracting customers</h4>", unsafe_allow_html=True)
 st.line_chart(perf,x='date',y='Performance')
 un_p = pd.DataFrame()
-un_p['Potential'] = ((data['people'] - money['people'])/(data['people']))*100
-un_p['date'] = data['date']
+for i in range(0,len(money)):
+    for j in range(0,len(data)):
+        if(data.iloc[j,1]==money.iloc[i,2]):
+            lup = pd.DataFrame([[((data.iloc[j,0] - money.iloc[i,1])/data.iloc[j,0]),data.iloc[j,1]]],columns=['Potential','date'])
+            un_p = pd.concat([un_p,lup],axis=0)
+un_p['Potential'] = un_p['Potential']*100
 st.markdown("<h4 style='text-align: center; color: white;'>Potential for more customers</h4>", unsafe_allow_html=True)
 st.line_chart(un_p,x='date',y='Potential')
 st.markdown("<h2 style='text-align: center; color: white;'>Todays Performance</h2>", unsafe_allow_html=True)
