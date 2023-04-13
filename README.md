@@ -74,7 +74,7 @@ All the requirements can be found the in the ***requirements.txt*** file in our 
 * Streamlit (Building the application)
 * Tensorflow and OpenCV (Detection of People via "yolov4-tiny" model)
 * Pandas and Numpy (Data Manipulation and Reading Libraries)
-* Matplotlib (Ouput plots)
+* Matplotlib (Output plots)
 - - - -
 ### Authors
 * [Abhijith Ajith](https://github.com/AAbhijithA)
